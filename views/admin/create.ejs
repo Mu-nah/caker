@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+  <h3>Upload Product</h3>
+
+<body>
+  
+<div class = 'create-item'>
+<form action='/product' method='POST'>
+  <div class="input-group mb-3">
+  <input type="file" class="form-control" id="floatingInput" placeholder="upload product picture" name="image"></div>
+   <div class="form-floating mb-3">
+  <input type="text" class="form-control" id="floatingInput" placeholder="product name" name="title">
+  <label for="floatingInput">Product Name</label>
+</div>
+  <div class="form-floating mb-3">
+  <textarea class="form-control" placeholder="Leave a description here" id="floatingTextarea" name="description" style = "height:150px"></textarea>
+  <label for="floatingTextarea">Description</label>
+</div>
+  <div class="form-floating mb-3">
+  <input type="number" class="form-control" id="floatingInput" name="price" placeholder="price">
+  <label for="floatingInput">Price</label>
+</div>
+<div>
+  <input class="btn btn-primary pull-right " type="submit" value="Submit">
+  </div>
+  
+</form>
+</div>
+<body>
+
+
+  
+
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title><%= title %></title>
+</head>
+<body>
+  <div class="d-grid gap-3 ">
+  
+    <% products.forEach(products => { %> 
+    <img src="uploads/<%= products.image %>" class="img-fluid" alt="...">
+      <div class='card ' style= 'width:18rem; height: 200px'>
+    <div class= "container-md">
+  <img src="<%= products.image%>" class="img-thumbnail" alt="image"></div>
+        <div class="card-body">
+          <h4 class="card-title"><%= products.title %></h4>
+        
+          <div class="card-text mb-2"><%= products.description %></div>
+          <div class="clearfix">
+  <button type="button" class="btn btn-secondary float-start">$<%= products.price %></button>
+  <button type="button" class="btn btn-secondary float-end">Adding to Cart</button>
+</div>
+          </form>
+        </div>
+      </div>
+    <% }) %> 
+  </div>
+</body>
